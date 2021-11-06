@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Test from './Test'
+import Home from './Home'
 import React from 'react';
 import { Routes, Route, Link, Switch } from "react-router-dom";
 
@@ -8,12 +8,12 @@ function App() {
   return (
   
     <div className="App">
-      <Routes>
-        <Route exact path="/" element={<Test />}>
-        </Route>
-        <Route path="home" element={ <Home />}>
-        </Route>
-      </Routes>
+      <header className="App-header">
+        <Routes>
+          <Route exact path="/" element={ <Home /> }>
+          </Route>
+        </Routes>
+      </header>
     </div>
 
     
@@ -42,20 +42,7 @@ function App() {
   );
 }
 
-// App.js
-function Home() {
-  return (
-    <>
-      <main>
-        <h2>Welcome to the homepage!</h2>
-        <p>You can do this, I believe in you.</p>
-      </main>
-      <nav>
-        <Link to="/about">About</Link>
-      </nav>
-    </>
-  );
-}
+
 
 function About() {
   return (
