@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from './Home'
+import Timer from './Timer'
 import React from 'react';
-import { Routes, Route, Link, Switch } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
       <header className="App-header">
         <Routes>
           <Route exact path="/" element={ <Home /> }>
+          </Route>
+          <Route path="/timer" element={ <Timer /> }>
           </Route>
         </Routes>
       </header>
