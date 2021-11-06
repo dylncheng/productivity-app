@@ -3,7 +3,6 @@ import React from 'react';
 import { render } from "@testing-library/react";
 
 function handleClick() {
-  return
 }
 
 function Home() {
