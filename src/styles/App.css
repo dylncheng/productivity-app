@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;400;500;600;700&display=swap');
 
 .App {
   /* background-color: #8a817c; */
@@ -54,7 +54,7 @@
 }
 
 .buttons {
-  margin-top: 10vh;
+  margin-top: 2vh;
   width: auto;
   display: flex;
   justify-content: center;
@@ -78,6 +78,12 @@ span {
   margin-bottom: 0.5vh;
 }
 
+h1 {
+  font-size: 20vh;
+  font-weight: 500;
+  margin-bottom: 4vh;
+}
+
 h2 {
   margin-top: 0.5vh;
   font-size: 4vh;
@@ -87,16 +93,32 @@ h2 {
   text-align: center;
 }
 
-/* button {
+.buttons button {
   height: 10vh;
   width: 14vh;
-  border-radius: 10%;
+  border-radius: 12%;
   border: none;
   margin: 0 3vw;
   text-align: center;
+  transition: all 0.3s ease;
+}
+
+button.play:hover {
+  background-color: rgb(140, 168, 140);
+  border-radius: 20%;
+}
+
+button.pause:hover {
+  background-color: rgb(201, 151, 151);
+  border-radius: 20%;
+}
+
+
+/* .buttons button:hover {
+  border-radius: 20%;
 } */
 
-button:hover {
-  background-color: #6b6e75;
-}
+
+
+
 

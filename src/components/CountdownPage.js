@@ -1,15 +1,35 @@
 
-import {useState, useRef, useEffect} from "react"
+import React, {useState, useRef, useEffect} from "react"
 import CountComponent from "./CountComponent"
 import Countdown from 'react-countdown-now'
 
 
 function CountdownPage(props) {
+  const [timer, setTimer] = useState(false);
+
+  const clockRef = useRef();
+
+  function handleStart () {
+    clockRef.current.start()
+  }
+  function handlePause () {
+    clockRef.current.pause()
+  }
+
   return(
+    <>
      <h1><Countdown date={Date.now() + 100000000 } 
-     autoStart={false} 
+     controlled={false}
+     autoStart={timer} 
+     ref={clockRef}
      renderer={ props => <div>{(props.hours>9?props.hours:'0'+props.hours)}:{(props.minutes>9?props.minutes:'0'+props.minutes)}:{(props.seconds>9?props.seconds:'0'+props.seconds)}</div>}></Countdown></h1>
-  );
+      
+      <div className="buttons">
+        <button className="play" onClick={handleStart}><i class="fas fa-play"></i></button>
+        <button className="pause" onClick={handlePause}><i class="fas fa-pause"></i></button>
+      </div>
+     </>
+     );
 }
 
 export default CountdownPage;
