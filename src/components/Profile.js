@@ -17,18 +17,27 @@ function Profile() {
     } else { 
         var days = 29;
     }
-
+    let colour = 130;
     let blocks = new Array(days).fill(0);
+    let colours = new Array(days).fill('0');
+    for(let i = 0; i < days; i++) {
+        colours[i] = "rgb(" + colour + ",149,248)";
+        colour +=2
+    }
+  
 
 
     console.log(month.toString());
 
     return(
-        <div className="button-container">
-            {blocks.map(() => (
-               <button className="gradient">hi</button>
-            ))}
-        </div>
+        <>
+            <h1>{month}</h1>
+            <div className="button-container">
+                {blocks.map(() => (
+                <button className="gradient" style={{backgroundColor: "rgb(130,149,248)"}}></button>
+                ))}
+            </div>
+        </>
     );
 }
 

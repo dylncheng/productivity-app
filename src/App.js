@@ -23,7 +23,7 @@ function App() {
       </Fragment>
       <header className="App-header">
         <Routes>
-          <Route exact path="/" element={ <Home /> }>
+          <Route exact path="/" element={ <Home></Home> }>
           </Route>
           {/* <Route path="/timer" element={ <Countdown minutes={70} task={"drink coffee"}/> }> */}
           {/* </Route> */}

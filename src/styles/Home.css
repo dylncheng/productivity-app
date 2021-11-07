@@ -12,7 +12,7 @@ header {
 
 header,
 form {
-  min-height: 15vh;
+  min-height: 12vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,4 +68,13 @@ form button:hover {
 
 input:focus {
   outline: none;
+}
+
+div input {
+  display: block;
+}
+
+h1 {
+  font-family: 'Red Hat Mono';
+  font-size: 4em;
 }
