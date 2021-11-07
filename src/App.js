@@ -4,13 +4,23 @@ import Home from './components/Home'
 import CountdownPage from './components/CountdownPage'
 import Timer from './components/Timer'
 import Profile from './components/Profile'
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Routes, Route, Link } from "react-router-dom";
+import LoginButton from "./components/login-button";
+import LogoutButton from './components/logout-button';
+import Profile2 from "./components/profile2";
+import ProfButton from './components/profile-button';
 
 function App() {
   return (
   
     <div className="App">
+      <Fragment>
+        <LoginButton/>
+        <LogoutButton/>
+        <ProfButton/>
+        <Profile2/>
+      </Fragment>
       <header className="App-header">
         <Routes>
           <Route exact path="/" element={ <Home /> }>
