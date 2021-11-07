@@ -136,7 +136,11 @@ button.pause:hover {
 /* .buttons button:hover {
   border-radius: 20%;
 } */
-
+nav {
+  position: absolute;
+  top: 1.4vh;
+  right: 2vh;
+}
 
 
 
