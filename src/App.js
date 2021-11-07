@@ -1,8 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import Home from './Home'
-import Countdown from './Countdown'
-import Timer from './Timer'
+
+import './styles/App.css';
+import Home from './components/Home'
+import Countdown from 'react-countdown-now'
+import Timer from './components/Timer'
+import CountComponent from './components/CountComponent'
 import React from 'react';
 import { Routes, Route, Link } from "react-router-dom";
 
@@ -14,8 +15,15 @@ function App() {
         <Routes>
           <Route exact path="/" element={ <Home /> }>
           </Route>
-          <Route path="/timer" element={ <Countdown minutes={60} task={"drink coffee"}/> }>
+          {/* <Route path="/timer" element={ <Countdown minutes={70} task={"drink coffee"}/> }> */}
+          {/* </Route> */}
+          <Route path="/timer" element={ 
+            <Countdown date={Date.now() + 100000000 } 
+                autoStart={false} 
+                renderer={ props => <div>{(props.hours>9?props.hours:'0'+props.hours)}:{(props.minutes>9?props.minutes:'0'+props.minutes)}:{(props.seconds>9?props.seconds:'0'+props.seconds)}</div> }>
+            </Countdown> }>
           </Route>
+
         </Routes>
       </header>
     </div>

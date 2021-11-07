@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap');
+
+body {
+  background-color: #373b44;
+  color: #c0c0c0;
+  font-family: 'Red Hat Mono', monospace;
+  min-height: 100vh;
+}
+header {
+  font-size: 2rem;
+}
+
+header,
+form {
+  min-height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: #c0c0c0;
+  font-family: 'Red Hat Mono', monospace;
+}
+form button {
+  color: #6a707e;
+  background: #c0c0c0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover {
+  background: #6a707e;
+  color: #c0c0c0;
+}
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 1rem;
+  background: #c0c0c0;
+  font-size: 1.5rem;
+  color: #373b44;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+}
+.filter-todo {
+  padding: 1rem;
+}
+.todo li {
+  flex: 1;
+}
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+input:focus {
+  outline: none;
+}
