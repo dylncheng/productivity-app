@@ -19,7 +19,7 @@ function App() {
           {/* </Route> */}
           <Route path="/timer" element={ <CountdownPage></CountdownPage>}>
           </Route>
-          <Route path="/profile" element={ <Profile></Profile>}>
+          <Route path="/profile" element={ <Profile></Profile> }>
           </Route>
         </Routes>
       </header>

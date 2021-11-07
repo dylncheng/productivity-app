@@ -1,4 +1,4 @@
-import { Navigate } from 'react-router-dom'
+import { useNavigate, Navigate } from 'react-router-dom'
 import React, {useState} from 'react';
 import Form from './Form';
 import TodoList from './TodoList';
@@ -10,20 +10,17 @@ import { render } from "@testing-library/react";
 function Home() {
 
   
-  const[inputText, setInputText] = useState("");
-  const[inputHours, setHours] = useState(""); 
-  const[inputMinutes, setMinutes] = useState(""); 
+  const[inputText, setInputText] = useState('');
+  const[inputHours, setHours] = useState(''); 
+  const[inputMinutes, setMinutes] = useState(''); 
   const[todos, setTodos] = useState([]);
 
-  function handleClick() {
-    console.log('hi');
-    return <Navigate to="/timer"></Navigate>;
-  }
+  const navigate = useNavigate()
 
   return (
     <div className="Home">
       <header>
-        <h1>TASK</h1> <button onClick={handleClick}>Let's get Started</button>
+        <h1>TASK</h1> <button onClick={() => navigate('/timer', { state: {todos} })}>Let's get Started</button>
       </header>
       <Form inputText = {inputText}
           todos={todos} 

@@ -9,8 +9,8 @@ const TodoList = ({todos}) => {
                 {todos.map(todo => (
                     <Todo 
                         text={todo.text} 
-                        hour={todo.hour} 
-                        minute={todo.minute} /> 
+                        hours={todo.hours} 
+                        minutes={todo.minutes} /> 
                 ))}
             </ul>
         </div>

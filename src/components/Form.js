@@ -14,7 +14,7 @@ const Form = ({setInputText,todos,setTodos,inputText, inputHours, setInputHours,
     const submitTodoHandler = (e) => {
         (e).preventDefault(); 
         setTodos([
-            ...todos, {text: inputText, hour: inputHours, minute: inputMinutes, id: Math.random() * 1000},
+            ...todos, {text: inputText, hours: inputHours, minutes: inputMinutes, id: Math.random() * 1000},
         ]);
         setInputText("");
         setInputHours("");
