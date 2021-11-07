@@ -1,16 +1,20 @@
 import React from 'react';
-import Todo from './Todo'
+import Todo from './Todo';
 
 const TodoList = ({todos}) => {
+
     return (
         <div className ="todo-container">
             <ul className ="todo-list">
                 {todos.map(todo => (
-                    <Todo text = {todo.text} />
+                    <Todo 
+                        text={todo.text} 
+                        hour={todo.hour} 
+                        minute={todo.minute} /> 
                 ))}
             </ul>
         </div>
     );
 };
 
-export default TodoList;
+export default TodoList
