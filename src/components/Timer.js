@@ -4,6 +4,7 @@ const Timer = (props) => {
     // const [timerSeconds, setTimerSeconds] = useState(() => {return 0});
     // const [timerMinutes, setTimerMinutes] = useState(() => {return props.minutes});
     // const [timerHours, setTimerHours] = useState(() => {return props.hours});
+    
     const [timerSeconds, setTimerSeconds] = useState(() => {return 60});
 
     const changeTimer = () => {
