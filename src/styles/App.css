@@ -97,10 +97,11 @@ h1 {
 
 h2 {
   margin-top: 0.5vh;
-  font-size: 4vh;
-  font-weight: 400;
-  font-family: 'Gluten';
-  text-transform: uppercase;
+  font-size: 4.5vh;
+  font-weight: 500;
+  color: rgb(145, 172, 140);
+  font-family: 'Red Hat Mono';
+  text-transform: lowercase;
   text-align: center;
 }
 
