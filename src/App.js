@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from './Home'
+import Countdown from './Countdown'
 import Timer from './Timer'
 import React from 'react';
 import { Routes, Route, Link } from "react-router-dom";
@@ -13,7 +14,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={ <Home /> }>
           </Route>
-          <Route path="/timer" element={ <Timer /> }>
+          <Route path="/timer" element={ <Countdown minutes={60} task={"drink coffee"}/> }>
           </Route>
         </Routes>
       </header>
