@@ -15,12 +15,21 @@ function App() {
   return (
   
     <div className="App">
-      <Fragment>
-        <LoginButton/>
-        <LogoutButton/>
-        <ProfButton/>
-        <Profile2/>
-      </Fragment>
+      {/* <Fragment> */}
+      <div class='container'>
+        <div class="row">
+          <div class="col-sm-6">
+            <ul class="list-group">
+              <li class="list-group-item"><Profile2/></li>
+              <li class="list-group-item"><LoginButton/></li>
+              <li class="list-group-item"><LogoutButton/></li>
+              <li class="list-group-item"><ProfButton/></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      {/* </Fragment> */}
       <header className="App-header">
         <Routes>
           <Route exact path="/" element={ <Home></Home> }>

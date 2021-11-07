@@ -25,6 +25,7 @@
 .App-header {
   background-color: #373b44;
   min-height: 100vh;
+  height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,6 +144,25 @@ nav {
   right: 2vh;
 }
 
+.user-picture {
+  width: 4rem;
+}
 
 
+.list-group,.list-group-item{
+  display: inline-block;
+  background-color: #373b44;
+  border-style: none;
+}
 
+ul {
+  list-style-type: none;
+}
+
+li {
+  color: white;
+}
+
+.container {
+  margin-left: 0;
+}

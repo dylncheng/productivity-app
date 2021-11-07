@@ -78,3 +78,8 @@ h1 {
   font-family: 'Red Hat Mono';
   font-size: 4em;
 }
+
+.user-info {
+  margin-top: 5px;
+  color: white;
+}

@@ -12,7 +12,7 @@ const ProfButton = () => {
 
     return (
         isAuthenticated && (
-            <button onClick={routeChange}>
+            <button type="button" class="btn btn-outline-secondary" onClick={routeChange}>
                 Profile
             </button>
         )
