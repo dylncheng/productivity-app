@@ -20,7 +20,7 @@ function Home() {
   return (
     <div className="Home">
       <header>
-        <h1>TASK</h1> <button onClick={() => navigate('/timer', { state: {todos} })}>Let's get Started</button>
+        <h1>TASK</h1> <button onClick={() => navigate('/timer', { state: {todos} })}>Start the Timer</button>
       </header>
       <Form inputText = {inputText}
           todos={todos} 

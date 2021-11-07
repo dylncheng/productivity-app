@@ -5,15 +5,16 @@ import CountComponent from "./CountComponent"
 import Countdown from 'react-countdown-now'
 
 
+
 function CountdownPage(props) {
   const [timer, setTimer] = useState(false);
   const [index, setIndex] = useState(0);
 
   const { state } = useLocation();
   let todos = state.todos;
-  // for(let i = 0; i < todos.length; i++) {
-  //   console.log(todos[i].text);
-  // }
+  for(let i = 0; i < todos.length; i++) {
+    todos[i].id = i;
+  }
   let miliseconds = ((todos[index].hours) * 60 * 60 * 1000) + ((todos[index].minutes) * 60 * 1000)
   
   const clockRef = useRef();
@@ -40,7 +41,7 @@ function CountdownPage(props) {
         <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
           
           {todos.map(todo => (
-             <li><a class="dropdown-item" href="#" onClick>{todo.task}</a></li>
+             <li><a className="dropdown-item" href="#" onClick={() => setIndex(todo.id)}>{todo.text}</a></li>
             ))}
         </ul>
       </div>
