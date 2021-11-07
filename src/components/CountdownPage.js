@@ -46,6 +46,7 @@ function CountdownPage(props) {
         </ul>
       </div>
     </nav>
+    <h2>{todos[index].text}</h2>
      <h1><Countdown date={Date.now() + miliseconds } 
      controlled={false}
      autoStart={timer} 
@@ -53,7 +54,6 @@ function CountdownPage(props) {
     renderer={ props => <div>{(props.hours>9?props.hours:'0'+props.hours)}:{(props.minutes>9?props.minutes:'0'+props.minutes)}:{(props.seconds>9?props.seconds:'0'+props.seconds)}</div>}>
      {/* renderer={() => <div>{(hours>9?hours:'0'+hours)}:{(minutes>9?minutes:'0'+minutes)}:{(seconds>9?seconds:'0'+seconds)}</div>}>   */}
       </Countdown></h1>
-      
       <div className="buttons">
         <button className="play" onClick={handleStart}><i className="fas fa-play"></i></button>
         <button className="pause" onClick={handlePause}><i className="fas fa-pause"></i></button>
