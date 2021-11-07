@@ -15,7 +15,7 @@ function Home() {
   return (
     <div className="App">
       <header>
-        <h1>TO DO LIST</h1>
+        <h1>TASK</h1>
       </header>
       <Form inputText = {inputText}
           todos = {todos} 

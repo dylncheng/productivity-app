@@ -1,9 +1,8 @@
 
 import './styles/App.css';
 import Home from './components/Home'
-import Countdown from 'react-countdown-now'
+import CountdownPage from './components/CountdownPage'
 import Timer from './components/Timer'
-import CountComponent from './components/CountComponent'
 import React from 'react';
 import { Routes, Route, Link } from "react-router-dom";
 
@@ -17,11 +16,7 @@ function App() {
           </Route>
           {/* <Route path="/timer" element={ <Countdown minutes={70} task={"drink coffee"}/> }> */}
           {/* </Route> */}
-          <Route path="/timer" element={ 
-            <Countdown date={Date.now() + 100000000 } 
-                autoStart={false} 
-                renderer={ props => <div>{(props.hours>9?props.hours:'0'+props.hours)}:{(props.minutes>9?props.minutes:'0'+props.minutes)}:{(props.seconds>9?props.seconds:'0'+props.seconds)}</div> }>
-            </Countdown> }>
+          <Route path="/timer" element={ <CountdownPage></CountdownPage>}>
           </Route>
 
         </Routes>
