@@ -3,6 +3,7 @@ import './styles/App.css';
 import Home from './components/Home'
 import CountdownPage from './components/CountdownPage'
 import Timer from './components/Timer'
+import Profile from './components/Profile'
 import React from 'react';
 import { Routes, Route, Link } from "react-router-dom";
 
@@ -18,7 +19,8 @@ function App() {
           {/* </Route> */}
           <Route path="/timer" element={ <CountdownPage></CountdownPage>}>
           </Route>
-
+          <Route path="/profile" element={ <Profile></Profile>}>
+          </Route>
         </Routes>
       </header>
     </div>
@@ -46,25 +48,6 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-  );
-}
-
-
-
-function About() {
-  return (
-    <>
-      <main>
-        <h2>Who are we?</h2>
-        <p>
-          That feels like an existential question, don't you
-          think?
-        </p>
-      </main>
-      <nav>
-        <Link to="/">Home</Link>
-      </nav>
-    </>
   );
 }
 
