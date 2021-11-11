@@ -41,7 +41,7 @@ function CountdownPage(props) {
         <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
           
           {todos.map(todo => (
-             <li><a className="dropdown-item" href="#" onClick={() => setIndex(todo.id)}>{todo.text}</a></li>
+             <li key={todo.id}><a className="dropdown-item" href="#" onClick={() => setIndex(todo.id)}>{todo.text}</a></li>
             ))}
         </ul>
       </div>
@@ -51,7 +51,7 @@ function CountdownPage(props) {
      controlled={false}
      autoStart={timer} 
      ref={clockRef}
-    renderer={ props => <div>{(props.hours>9?props.hours:'0'+props.hours)}:{(props.minutes>9?props.minutes:'0'+props.minutes)}:{(props.seconds>9?props.seconds:'0'+props.seconds)}</div>}>
+     renderer={ props => <div>{(props.hours>9?props.hours:'0'+props.hours)}:{(props.minutes>9?props.minutes:'0'+props.minutes)}:{(props.seconds>9?props.seconds:'0'+props.seconds)}</div>}>
      {/* renderer={() => <div>{(hours>9?hours:'0'+hours)}:{(minutes>9?minutes:'0'+minutes)}:{(seconds>9?seconds:'0'+seconds)}</div>}>   */}
       </Countdown></h1>
       <div className="buttons">
