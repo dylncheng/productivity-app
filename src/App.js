@@ -2,7 +2,6 @@
 import './styles/App.css';
 import Home from './components/Home'
 import CountdownPage from './components/CountdownPage'
-import Timer from './components/Timer'
 import Profile from './components/Profile'
 import React, { Fragment } from 'react';
 import { Routes, Route, Link } from "react-router-dom";
