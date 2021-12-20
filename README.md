@@ -1,8 +1,16 @@
 # Zen-Mo https://devpost.com/software/zen-mo
 
+### Purpose:
+- To create a productivity app which is simple and intuitive to use for university students
 
-#### Demo video:
-https://www.youtube.com/watch?v=7xWdeTQ6OzU
+
+### Concepts Learned:
+- React Hooks
+- Functional and Class Components
+- External Authentication
+
+
+#### Demo video: https://www.youtube.com/watch?v=7xWdeTQ6OzU
 
 
  
