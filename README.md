@@ -32,5 +32,5 @@
 ![zm1](https://user-images.githubusercontent.com/68773823/146826125-a4b03796-5d6f-480d-9f2d-22ae2d84845a.png)
 
 
-#### Profile Page
+#### Profile Page:
 ![zm3](https://user-images.githubusercontent.com/68773823/146826146-c4a354ca-34fa-49cb-9a4b-535751a72b9f.png)
